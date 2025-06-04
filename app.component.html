@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ivana | Curriculum Vitae</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --primario: #1e3a8a;
+        --secundario: #6366f1;
+        --acento: #facc15;
+        --fondo: #f9fafb;
+        --text: #111827;
+        --claro: #ffffff;
+      }
+
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background-color: var(--fondo);
+        padding: 1rem;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      header {
+        background: linear-gradient(to right, var(--primario), var(--secundario));
+        color: white;
+        padding: 2rem 1rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      nav a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.3s;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+      }
+
+      nav a:hover {
+        background-color: var(--acento);
+        color: var(--text);
+      }
+
+      main section {
+        background: var(--claro);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: transform 0.3s;
+      }
+
+      main section:hover {
+        transform: translateY(-3px);
+      }
+
+      main img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid var(--secundario);
+        display: block;
+        margin: 0 auto 1rem auto;
+      }
+
+      h2 {
+        color: var(--primario);
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: disc;
+        margin-left: 1.5rem;
+      }
+
+      p, li {
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: var(--secundario);
+        font-weight: 500;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: var(--primario);
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        color: white;
+        background: var(--primario);
+        border-radius: 12px;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+
+        main section {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ivana</h1>
+      <nav>
+        <ul>
+          <li><a href="#perfil">Perfil</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#educacion">Educación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="perfil">
+        <img src="https://i.pinimg.com/736x/ad/e4/f1/ade4f1528e77c9588a851e19f2505728.jpg" alt="Foto profesional de Ivana" />
+        <h2>Perfil Profesional</h2>
+        <p>
+          Soy desarrolladora con enfoque en tecnologías web, apasionada por la
+          innovación y el desarrollo de soluciones integrales.
+        </p>
+      </section>
+
+      <section id="experiencia">
+        <h2>Experiencia</h2>
+        <ul>
+          <li><strong>Desarrolladora Web</strong> - Empresa Bencoplance (2023 - Actualidad)</li>
+          <li><strong>Internship en Backend</strong> - Empresa Y (2022)</li>
+        </ul>
+      </section>
+
+      <section id="educacion">
+        <h2>Educación</h2>
+        <ul>
+          <li>Ingeniería en Desarrollo y Gestión de Software - Universidad Z</li>
+          <li>
+            Certificado en Desarrollo Web Integral -
+            <a href="https://tucertificado.com" target="_blank">Ver certificado</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:ivanarocha202017@email.com">ivana&#64;email.com</a></p>
+        <p>GitHub: <a href="IvanaRC10" target="_blank">tuusuario</a></p>
+        <p>LinkedIn: <a href="IvanaRC10/Curiiculum" target="_blank">tuusuario</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Ivana</p>
+    </footer>
+  </body>
+</html>
